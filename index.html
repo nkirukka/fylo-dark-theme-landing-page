@@ -12,27 +12,37 @@
 </head>
 
 <body>
-  <nav>
+ <div class="header">
+   <!-- Navigation -->
+   <nav>
     <div class="nav-brand">
-      <img src="./images/logo.svg" alt="">
+      <img src="./images/logo.svg" alt="Logo">
     </div>
     <ul class="nav-links">
-      <li><a href="#">Features</a></li>
-      <li><a href="#">Team</a></li>
-      <li><a href="#">Sign In</a></li>
+      <li class="nav-item"><a href="#">Features</a></li>
+      <li class="nav-item"><a href="#">Team</a></li>
+      <li class="nav-item"><a href="#">Sign In</a></li>
     </ul>
   </nav>
+
   <header>
     <div class="intro-img">
-      <img src="./images/illustration-intro.png" alt="">
+      <img src="./images/illustration-intro.png" class="illustration" alt="illustration">
     </div>
     <div class="intro-info">
       <h1>All your files in one secure location, accessible anywhere.</h1>
       <p> Fylo stores all your most important files in one secure location. Access them wherever
         you need, share and collaborate with friends family, and co-workers.</p>
-      <button>Get Started</button>
+      <button class="cta">Get Started</button>
     </div>
   </header>
+ </div>
+
+ <div class="curvy-bg">
+  <img src="./images/bg-curvy-mobile.svg" alt="Curvy background">
+  <div class="curvy-half"></div>
+ </div>
+
   <!--What company offers-->
   <div class="offers-wrapper">
     <div class="access">
@@ -63,7 +73,7 @@
 
   <!--Productive section-->
   <div class="productive-wrapper">
-    <img src="./images/illustration-stay-productive.png" alt="">
+    <img src="./images/illustration-stay-productive.png" class="illustration" alt="">
     <h3>Stay productive, wherever you are</h3>
     <p>Never let location be an issue when accessing your files. Fylo has you covered for all of your file storage
       needs.</p>
@@ -115,7 +125,7 @@
     <p>It only takes a minute to sign up and our free starter tier is extremely generous. If you have any
       questions, our support team would be happy to help you.</p>
   <input type="text" name="" id="" placeholder="email@example.com">
-  <button>Get Started For Free</button>
+  <button class="cta">Get Started For Free</button>
 </div>
 <footer>
   <img src="./images/logo.svg" alt="">
@@ -125,9 +135,9 @@
     <!-- Dont know yet if the icons should be in list-style-img or spans -->
   <!-- Google best way to display get-in-touch icons in footer -->
     <ul>
-    <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</li>
-    <li>+1-543-123-4567</li>
-    <li>example@fylo.com</li>
+    <li> <span><img src="./images/icon-location.svg" alt=""></span> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</li>
+    <li> <span><img src="./images/icon-phone.svg" alt=""></span> +1-543-123-4567</li>
+    <li> <span><img src="./images/icon-email.svg" alt=""></span> example@fylo.com</li>
   </ul>
   </div>
 
