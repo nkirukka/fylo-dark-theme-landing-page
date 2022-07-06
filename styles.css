@@ -53,9 +53,9 @@ h5,
   font-family: var(--head-btn-nav-ff);
   font-weight: 700;
 }
-p{
-    font-size: 0.9rem;
-    line-height: 1.8em;
+p {
+  font-size: 0.9rem;
+  line-height: 1.8em;
 }
 .header {
   background-color: var(--dark-blue-intro);
@@ -83,6 +83,7 @@ nav {
 }
 .nav-item a {
   color: var(--white);
+  font-size: 1.1rem;
   font-weight: 400;
   white-space: nowrap;
 }
@@ -94,7 +95,7 @@ header {
   justify-content: center;
   text-align: center;
   margin: 0 auto;
-  max-width: 302px;
+  width: 90vw;
 }
 header h1 {
   font-size: 1.7rem;
@@ -108,7 +109,8 @@ header p {
   width: 100%;
 }
 .cta {
-  max-width: 60vw;
+  max-width: 80%;
+  width: 70%;
   background: var(--cyan-gradient);
   background: linear-gradient(
     135deg,
@@ -141,22 +143,88 @@ header p {
 }
 .offers-wrapper {
   margin: 9em 2em;
- text-align: center;
+  text-align: center;
 }
-.offers-wrapper img{
-    width: 19%;
-    margin-bottom: 1em;
+.offers-wrapper img {
+  width: 19%;
+  margin-bottom: 1em;
 }
-.offers-wrapper h2{
-    font-size: 1.3rem;
-    margin-bottom: .5em;
+.offers-wrapper h2 {
+  font-size: 1.3rem;
+  margin-bottom: 0.5em;
 }
 .access,
 .security,
 .collaboration,
-.store{
-    margin-bottom: 3.9em;
+.store {
+  margin-bottom: 3.9em;
 }
+.productive-wrapper{
+    width: 90vw;
+    margin: 0 auto 9em;
+}
+.productive-wrapper h3{
+    font-size: 1.3rem;
+    margin: 2em 0 1em;
+}
+.productive-wrapper p{
+    margin-bottom: 1em;
+}
+.productive-wrapper a{
+    font-size: .9rem;
+    color: var(--cyan-gradient);
+    border-bottom: 1px solid var(--cyan-gradient);
+    padding-bottom: .3em;
+}
+.productive-wrapper a span{
+    position: relative;
+    bottom: -.2em;
+}
+.reviews-wrapper{
+    width: 80vw;
+    margin: auto;
+}
+.reviews-wrapper::before{
+    content: url(./images/bg-quotes.png);
+    position: relative;
+    left: 1em;
+    top: .8em;
+    z-index: -1;
+}
+.people{
+    background-color: var(--reviews-bg);
+    padding: 2em 1em;
+    margin-bottom: 1em;
+}
+.people p{
+    font-size: .8rem;
+    opacity: .9;
+}
+.people .profile{
+    margin-top: 1em;
+}
+/* .fd-col{
+    align-content: stretch;
+} */
+.people .profile img{
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    float: left;
+    margin-right: .5em;
+}
+.people .profile h4{
+    font-size: .5rem;
+    font-family: var(--body-font-family);
+    letter-spacing: .1em;
+    margin-bottom: 1em;
+}
+.people .profile .title{
+    font-size: .3rem;
+}
+
+
+
 
 .attribution {
   font-size: 11px;
