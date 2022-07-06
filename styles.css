@@ -83,7 +83,7 @@ nav {
 }
 .nav-item a {
   color: var(--white);
-  font-size: 1.1rem;
+  font-size: 1rem;
   font-weight: 400;
   white-space: nowrap;
 }
@@ -108,7 +108,7 @@ header p {
 .illustration {
   width: 100%;
 }
-.cta {
+.cta-intro {
   max-width: 80%;
   width: 70%;
   background: var(--cyan-gradient);
@@ -193,7 +193,7 @@ header p {
 }
 .people{
     background-color: var(--reviews-bg);
-    padding: 2em 1em;
+    padding:  1.5em 1em;
     margin-bottom: 1em;
 }
 .people p{
@@ -203,9 +203,6 @@ header p {
 .people .profile{
     margin-top: 1em;
 }
-/* .fd-col{
-    align-content: stretch;
-} */
 .people .profile img{
     width: 25px;
     height: 25px;
@@ -217,19 +214,110 @@ header p {
     font-size: .5rem;
     font-family: var(--body-font-family);
     letter-spacing: .1em;
-    margin-bottom: 1em;
+    margin-bottom: .5em;
 }
 .people .profile .title{
     font-size: .3rem;
 }
-
-
-
-
+.free-sign_up{
+    position: relative;
+    top: 10em;
+    width: 90vw;
+    background-color: var(--dark-blue-intro);
+    text-align: center;
+    margin: 0 auto;
+    padding: 2em 1em;
+}
+.free-sign_up h5{
+    font-size: 1.2rem;
+    margin-bottom: 1em;
+}
+.free-sign_up p{
+    opacity: .9;
+}
+.cta-access,
+.free-sign_up input{
+width: 85%;
+padding: 1.5em 2em;
+margin-top: 2em;
+border-radius: 3em;
+border: none;
+}
+.free-sign_up input::placeholder{
+font-size: .5rem;
+opacity: .5;
+}
+.cta-access{
+    background: var(--cyan-gradient);
+    background: linear-gradient(
+      135deg,
+      var(--cyan-gradient) 45%,
+      var(--blue-gradient) 100%
+    );
+    color: var(--white);
+}
+footer{
+    background-color: var(--footer-bg);
+   padding: 15em 2em 1em;
+}
+.footer-logo{
+    transform: scale(.8);
+    transform-origin: 0 0;
+    margin-bottom: 2em;
+}
+.get-in-touch{
+    margin-bottom: 5em;
+}
+.get-in-touch ul li:first-child{
+    display: grid;
+    grid-template-columns: auto auto;
+}
+.get-in-touch ul li{
+    margin-bottom: 1em;
+    font-size: 1rem;
+    opacity: .9;
+}
+.loc{
+    margin-right: 2em;
+}
+.phone,
+.email{
+    margin-right: 1.3em;
+}
+.footer-links ul{
+    margin: 2em 0;
+}
+.footer-links ul li{
+    margin-bottom: .7em;
+}
+.footer-links ul li a{
+    color: var(--white);
+    font-size: 1rem;
+}
+.social-icons{
+    display: flex;
+    justify-content: center;
+    margin: 4em 0 2em;
+}
+.social-icons button{
+    width: 25px;
+    height: 25px;
+    color: var(--white);
+    background: none;
+    border: 1px solid var(--white);
+    border-radius: 50%;
+    padding: 5px;
+}
+.social-icons button + button{
+    margin-left: 1em;
+}
 .attribution {
+    background-color: rgb(9, 7, 46);
   font-size: 11px;
   text-align: center;
+  padding: 1em 0;
 }
 .attribution a {
-  color: hsl(228, 45%, 44%);
+  color: hsl(155, 79%, 49%);
+  font-weight: 700;
 }
