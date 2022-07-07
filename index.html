@@ -39,7 +39,8 @@
   </div>
 
   <div class="curvy-bg">
-    <img src="./images/bg-curvy-mobile.svg" alt="Curvy background">
+    <img src="./images/bg-curvy-mobile.svg" alt="Curvy background" class="mobile-curvy">
+    <img src="./images/bg-curvy-desktop.svg" alt="curvy background" class="desktop-curvy">
     <div class="curvy-half"></div>
   </div>
 
@@ -73,13 +74,18 @@
 
   <!--Productive section-->
   <div class="productive-wrapper">
-    <img src="./images/illustration-stay-productive.png" class="illustration" alt="">
-    <h3>Stay productive, wherever you are</h3>
-    <p>Never let location be an issue when accessing your files. Fylo has you covered for all of your file storage
-      needs.</p>
-    <p>Securely share files and folders with friends, family and colleagues for live collaboration. No email attachments
-      required.</p>
-    <a href="#">See how Fylo works <span><img src="./images/icon-arrow.svg" alt=""></span></a>
+    <div class="illus">
+      <img src="./images/illustration-stay-productive.png" class="illustration" alt="">
+    </div>
+    <div class="info">
+      <h3>Stay productive, wherever you are</h3>
+      <p>Never let location be an issue when accessing your files. Fylo has you covered for all of your file storage
+        needs.</p>
+      <p>Securely share files and folders with friends, family and colleagues for live collaboration. No email
+        attachments
+        required.</p>
+      <a href="#">See how Fylo works <span><img src="./images/icon-arrow.svg" alt=""></span></a>
+    </div>
   </div>
 
   <!--Reviews/testimonials-->
@@ -93,10 +99,10 @@
         <div>
           <img src="./images/profile-1.jpg" alt="">
         </div>
-       <div class="fd-col">
-        <h4>Satish Patel</h4>
-        <p class="title">Founder & CEO, Huddle</p>
-       </div>
+        <div class="fd-col">
+          <h4>Satish Patel</h4>
+          <p class="title">Founder & CEO, Huddle</p>
+        </div>
       </div>
     </div>
 
@@ -123,10 +129,10 @@
         <div>
           <img src="./images/profile-3.jpg" alt="">
         </div>
-      <div class="fd-col">
-        <h4>Iva Boyd</h4>
-        <p class="title">Founder & CEO, Huddle</p>
-      </div>
+        <div class="fd-col">
+          <h4>Iva Boyd</h4>
+          <p class="title">Founder & CEO, Huddle</p>
+        </div>
       </div>
     </div>
   </div>
@@ -136,51 +142,59 @@
     <h5>Get early access today</h5>
     <p>It only takes a minute to sign up and our free starter tier is extremely generous. If you have any
       questions, our support team would be happy to help you.</p>
-    <input type="text" name="" id="" placeholder="email@example.com">
-    <button class="cta cta-access">Get Started For Free</button>
+    <form action="" novalidate>
+      <div class="input"> <input type="email" name="" id="" placeholder="email@example.com">
+        <span class="error">Please enter a valid email address</span>
+      </div>
+      <button class="cta cta-access">Get Started For Free</button>
+    </form>
   </div>
 
   <!-- Footer -->
   <footer>
     <img src="./images/logo.svg" alt="logo" class="footer-logo">
 
-    <!-- Get In Touch -->
-    <div class="get-in-touch">
-      <ul>
-        <li> <span class="loc"><img src="./images/icon-location.svg" alt=""></span> <span>Lorem ipsum dolor sit amet, consectetur
-          adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</span></li>
-        <li> <span class="phone"><img src="./images/icon-phone.svg" alt=""></span> +1-543-123-4567</li>
-        <li> <span class="email"><img src="./images/icon-email.svg" alt=""></span> example@fylo.com</li>
-      </ul>
-    </div>
+    <div class="f-flex">
+      <!-- Get In Touch -->
+      <div class="get-in-touch">
+        <ul>
+          <li> <span class="loc"><img src="./images/icon-location.svg" alt=""></span> <span>Lorem ipsum dolor sit amet,
+              consectetur
+              adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</span></li>
+          <li> <span class="phone"><img src="./images/icon-phone.svg" alt=""></span> +1-543-123-4567</li>
+          <li> <span class="email"><img src="./images/icon-email.svg" alt=""></span> example@fylo.com</li>
+        </ul>
+      </div>
 
-    <!-- Footer Links -->
-    <div class="footer-links">
-      <ul class="about">
-        <li><a href="#">About Us</a></li>
-        <li><a href="#">Jobs</a></li>
-        <li><a href="#">Press</a></li>
-        <li><a href="#">Blog</a></li>
-      </ul>
-      <ul class="contact">
-        <li><a href="#">Contact Us</a></li>
-        <li><a href="#">Terms</a></li>
-        <li><a href="#">Privacy</a></li>
-      </ul>
-    </div>
+      <!-- Footer Links -->
+      <div class="footer-links">
+        <ul class="about">
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Jobs</a></li>
+          <li><a href="#">Press</a></li>
+          <li><a href="#">Blog</a></li>
+        </ul>
+        <ul class="contact">
+          <li><a href="#">Contact Us</a></li>
+          <li><a href="#">Terms</a></li>
+          <li><a href="#">Privacy</a></li>
+        </ul>
+      </div>
 
-    <!-- Social Media Icons -->
-    <div class="social-icons">
-      <!-- Make icons border circle -->
-      <button><i class="fa-brands fa-facebook-f"></i></button>
-      <button><i class="fa-brands fa-twitter"></i></button>
-      <button><i class="fa-brands fa-instagram"></i></button>
+      <!-- Social Media Icons -->
+      <div class="social-icons">
+        <!-- Make icons border circle -->
+        <button><i class="fa-brands fa-facebook-f"></i></button>
+        <button><i class="fa-brands fa-twitter"></i></button>
+        <button><i class="fa-brands fa-instagram"></i></button>
+      </div>
     </div>
   </footer>
   <p class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor  </a>
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor </a>
     Coded by <a href="linkedin.com/in/nkiruka-ebele-8b03bb17a" target="_blank"> Nkiruka Ebele</a>
   </p>
+  <script src="./app.js"></script>
 </body>
 
 </html>
