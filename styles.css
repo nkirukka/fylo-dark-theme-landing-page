@@ -124,6 +124,7 @@ header p {
 }
 .illustration {
   width: 90%;
+  margin-inline: auto;
 }
 .cta-intro {
   max-width: 80%;
@@ -462,7 +463,7 @@ footer{
         padding: 0 10em 0;
     }
     .intro-info{
-        padding: 0 10em;
+        padding: 0 7em;
     }
  header .intro-img{
         padding: 8em 5em 0;
@@ -473,13 +474,5 @@ footer{
 .store {
   padding: 3em 4.9em;
   margin-bottom: 0;
-}
-}
-@media only screen and (min-width: 1438px) {
-.access,
-.security,
-.collaboration,
-.store {
-  padding: 3em 6.7em;
 }
 }
